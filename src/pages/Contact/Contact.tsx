@@ -4,7 +4,7 @@ import Contact_Info from "./ContactInfo/Contact_Info";
 import Location from "./ContactInfo/Location";
 import { GrContactInfo } from "react-icons/gr";
 import { SiGoogleforms } from "react-icons/si";
-import logo from "../../Images/LOGO.svg";
+import logo from "../../image-export/LOGO.svg";
 import { motion } from "motion/react";
 const Contact = () => {
   const [activeTab, setActiveTab] = useState(false);

@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "motion/react";
 
 const cards = [
   {
@@ -25,22 +24,15 @@ const cards = [
 ];
 
 const ServiceCarousel = () => {
-  const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
   return (
-    <div ref={ref} className="space-y-8">
+    <div className="space-y-8">
       {cards.map((card, index) => (
         <motion.div
           key={index}
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
-          className=" flex items-center justify-center px-4"
+          className="flex items-center justify-center px-4"
         >
           <div className="bg-[#b7e3df] rounded-xl p-6 max-w-xl w-full shadow-xl">
             <div className="flex items-center space-x-3 mb-3">

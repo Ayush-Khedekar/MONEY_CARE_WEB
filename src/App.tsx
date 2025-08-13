@@ -1,26 +1,104 @@
-import Animation from "./components/ServiceCarousel";
+// import Animation from "./components/ServiceCarousel";
 import Home from "./components/NavBar/Home";
 import Navbar from "./components/NavBar/Navbar";
 import OurCard from "./components/Our-Card";
 import Service from "./components/Service";
+// import Money_Care from "./Money_Care";
+import { useState } from "react";
+import Solutions from "./pages/Solutions/Solutions";
+import User_Terms from "./pages/User_Terms/User_Terms";
+import Contact from "./pages/Contact/Contact";
 import Footer from "./Footer/Footer";
+// import Footer from "./Footer/Footer";
 
 const App = () => {
+  const [activePrivacy, setActivePrivacy] = useState<boolean>(false);
+  const [activeTerms, setActiveTerms] = useState<boolean>(false);
+
+  function privacyActive() {
+    setActivePrivacy(true);
+  }
+
+  function termsActive() {
+    setActiveTerms(true);
+  }
+
+  function privacyInActive() {
+    setActivePrivacy(false);
+  }
+  function termsInActive() {
+    setActiveTerms(false);
+  }
+
   return (
     <>
       <Navbar />
       <Home />
-      <main className="">
-        <section id="ABOUT US">
+      <main>
+        <div
+          id="ABOUT US"
+          className={`${
+            activePrivacy || activeTerms === true ? "blur-xs" : ""
+          }`}
+        >
           <OurCard />
-        </section>
-        <section id="FEATURES">
+        </div>
+        <div
+          id="FEATURES"
+          className={`${
+            activePrivacy || activeTerms === true ? "blur-xs" : ""
+          }`}
+        >
           <Service />
+        </div>
+        <div
+          id="SOLUTIONS"
+          className={`${
+            activePrivacy || activeTerms === true ? "blur-xs" : ""
+          }`}
+        >
+          <Solutions />
+        </div>
+        <section id="USER TERMS">
+          <User_Terms
+            activePrivacy={activePrivacy}
+            activeTerms={activeTerms}
+            privacyActive={privacyActive}
+            termsActive={termsActive}
+            privacyInActive={privacyInActive}
+            termsInActive={termsInActive}
+          />
         </section>
-        <section id="SOLUTIONS"></section>
-        <section id="USER TERMS"></section>
-        <section id="CONTACT"></section>
+        <div
+          id="CONTACT"
+          className={`${
+            activePrivacy || activeTerms === true ? "blur-xs" : ""
+          }`}
+        >
+          <Contact />
+        </div>
+        <div
+          className={`${
+            activePrivacy || activeTerms === true ? "blur-xs" : ""
+          }`}
+        >
+          <Footer />
+        </div>
       </main>
+
+      {/* <User_Terms
+        activePrivacy={activePrivacy}
+        activeTerms={activeTerms}
+        privacyActive={privacyActive}
+        termsActive={termsActive}
+        privacyInActive={privacyInActive}
+        termsInActive={termsInActive}
+      /> */}
+      <div
+        className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
+      >
+        <Footer />
+      </div>
     </>
   );
 };

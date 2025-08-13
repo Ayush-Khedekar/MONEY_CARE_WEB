@@ -48,7 +48,7 @@ const User_Terms = ({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "-100%" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className={`w-full md:w-[50%] fixed left-0 top-0 z-10 bg-white rounded-xl shadow-xl p-5 sm:p-10 `}
+            className={`w-full md:w-[50%] fixed left-0 top-0 z-50 bg-white rounded-xl shadow-xl p-5 sm:p-10 `}
           >
             {/* scrollable-element */}
             <button
@@ -68,7 +68,7 @@ const User_Terms = ({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed w-full md:w-[50%] right-0 overflow-y-auto top-0 z-10 bg-white rounded-2xl shadow-xl p-5 sm:p-10"
+            className="fixed w-full md:w-[50%] right-0 overflow-y-auto top-0 z-50 bg-white rounded-2xl shadow-xl p-5 sm:p-10"
           >
             <button
               onClick={() => termsInActive()}
