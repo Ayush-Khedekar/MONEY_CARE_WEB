@@ -2,7 +2,7 @@ import { images } from "../../image-export/Images";
 
 const Home = () => {
   return (
-    <div className="bg-white overflow-hidden md:p-5 flex flex-col md:flex-row items-center justify-between w-full gap-4">
+    <div className="bg-[#f0f6ff] overflow-hidden md:p-5 flex flex-col md:flex-row items-center justify-between w-full gap-4">
       <div className="w-full sm:w-[70%] md:w-[40%] p-4 sm:p-6 font-sans transition-all duration-500 ease-in-out">
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold leading-snug tracking-tight">
           <span className="text-[#008c59] block w-full">
@@ -29,7 +29,7 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="bg-white p-1 flex items-center justify-center w-full  md:w-[60%]">
+      <div className="bg-[#f0f6ff] p-1 flex items-center justify-center w-full  md:w-[60%]">
         <div className="relative w-full">
           <div className="flex flex-row justify-center items-start gap-2 sm:gap-4  md:gap-10 mb-8">
             <div className="bg-white p-4 rounded-2xl shadow-md flex flex-col items-center transition-transform duration-300 hover:scale-[1.05] w-full sm:w-auto">
@@ -95,7 +95,7 @@ const Home = () => {
               </button>
             </div>
 
-            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full sm:w-52 flex flex-col items-center justify-center gap-3 sm:gap-4 animate-pulse hover:scale-[1.05] transition-transform duration-300">
+            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full sm:w-52 flex flex-col items-center justify-center gap-3 sm:gap-4  hover:scale-[1.05] transition-transform duration-300">
               <img
                 src={images.Payment}
                 alt="Success"
