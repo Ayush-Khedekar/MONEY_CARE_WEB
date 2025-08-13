@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; // Ensure 'framer-motion' installed
+import { motion } from "motion/react"; // Ensure 'framer-motion' installed
 
 type Props = {
   onLinkClick: (id: string) => void;
@@ -16,13 +16,13 @@ const navItems = [
 const Navigations = ({ onLinkClick, activeSection }: Props) => {
   return (
     <>
-      {navItems.map((item) => (
+      {navItems.map((item, index) => (
         <motion.li
           whileInView={{ opacity: 1, x: 10 }}
           initial={{ opacity: 0, x: 20 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          key={item.id}
+          key={index}
           className={`relative group list-none ${
             activeSection == item.id ? "font-bold text-[#000000]" : ""
           }`}
