@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaHouseUser, FaLinkedin } from "react-icons/fa";
-// import { Link } from "react-router";
-import bgLogo from "../Images/FAV ICON.svg";
+import { images } from "../image-export/Images";
 
 type dataType = {
   icons: React.ReactNode;
@@ -15,7 +14,7 @@ const Footer = () => {
 
   return (
     <div
-      style={{ backgroundImage: `url(${bgLogo})` }}
+      style={{ backgroundImage: `url(${images.LOGO}})` }}
       className="flex justify-between p-5 items-center relative"
     >
       <p className="font-medium">
