@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { FaHouseUser, FaLinkedin } from "react-icons/fa";
+
 // import { Link } from "react-router";
 import FavLogo from "../Images/LOGO VARIATION 02.svg";
+
 type dataType = {
   icons: React.ReactNode;
 };
@@ -13,6 +15,7 @@ const Footer = () => {
   ]);
 
   return (
+
     <div className="w-full relative bg-gradient-to-r from-blue-200 via-white to-gray-200 shadow-inner py-8 px-6 sm:px-12">
   <img
     src={FavLogo}
@@ -35,6 +38,7 @@ const Footer = () => {
           {item.icons}
         </button>
       ))}
+
     </div>
   </div>
 </div>
