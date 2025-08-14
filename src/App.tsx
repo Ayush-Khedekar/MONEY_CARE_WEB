@@ -33,16 +33,18 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Home />
+      <section id="HOME">
+        <Home />
+      </section>
       <main>
-        <div
+        <section
           id="ABOUTUS"
           className={`${
             activePrivacy || activeTerms === true ? "blur-xs" : ""
-          } w-full space-y-10`}
+          } w-full space-y-10 bg-blue-50 pb-4`}
         >
           <OurCard />
-        </div>
+        </section>
         <div
           id="FEATURES"
           className={`${

@@ -50,9 +50,9 @@ const Navbar = () => {
       <div className="flex relative justify-between items-center px-6 py-2 bg-white">
         <img
           src={images.LOGO}
-          className="lg:w-[10%] sm:w-[33%] w-[30%] md:w-[20%] cursor-pointer hover:scale-105 transition-transform duration-300"
+          onClick={() => handleScrollTo("HOME")}
+          className="lg:w-[15%] sm:w-[35%] w-[40%] md:w-[25%] cursor-pointer hover:scale-105 transition-transform duration-300"
         />
-
         <div className="flex gap-6 items-center">
           <div className="hidden lg:block">
             <ul className="flex items-center gap-4">
