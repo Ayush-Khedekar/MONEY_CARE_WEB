@@ -3,29 +3,29 @@ import { images } from "../../image-export/Images";
 const Home = () => {
   return (
     <div className="bg-[#f0f6ff] overflow-hidden md:p-5 flex flex-col md:flex-row items-center justify-between w-full gap-4">
-      <div className="w-full sm:w-[70%] md:w-[40%] p-4 sm:p-6 font-sans transition-all duration-500 ease-in-out">
+      <div className="w-full sm:w-[70%] md:w-[40%] space-y-5 p-4 sm:p-6 font-sans transition-all duration-500 ease-in-out">
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold leading-snug tracking-tight">
           <span className="text-[#133042] block w-full font-bold">
             Streamline Your Life:
           </span>
 
           <span className="relative inline-block group">
-            <span className="text-black font-bold">
+            <span className="text-[#15683A] font-bold">
               Effortless Utility Bill Payments and Travel
             </span>
             <span className="absolute left-0 bottom-0 h-1 bg-black w-0 group-hover:w-full transition-all duration-500" />
           </span>
         </h1>
 
-        <p className="text-gray-700 mt-4 sm:mt-6 text-sm sm:text-base leading-relaxed">
-          Planning with <strong className="text-[#133042]">Money Care</strong> &
+        <p className="text-gray-700 mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed">
+          Planning with <strong className="text-[#15683A]">Money Care</strong> &
           our advanced technology and secure systems provide a safe and reliable
           way to transfer funds, allowing you to benefit from reduced processing
           times and improved efficiency.
         </p>
 
         <a href="#ABOUTUS">
-          <button className=" font-boldmt-6 sm:mt-8 md:mt-10 px-5 py-2 sm:px-6 sm:py-3 bg-[#008c59] hover:bg-purple-700 text-white rounded-full font-semibold shadow-lg transition-transform duration-300 transform hover:scale-105 hover:-translate-y-1">
+          <button className=" font-boldmt-6 sm:mt-8 md:mt-10 px-5 py-2 sm:px-6 sm:py-3 bg-[#15683A] hover:bg-[#133042] text-white rounded-full font-semibold shadow-lg transition-transform duration-300 transform hover:scale-105 hover:-translate-y-1 cursor-pointe">
             Get started →
           </button>
         </a>
@@ -97,7 +97,7 @@ const Home = () => {
               </button>
             </div>
 
-            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full sm:w-52 flex flex-col items-center justify-center gap-3 sm:gap-4  transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
+            <div className="bg-white p-6 sm:p-6 rounded-2xl shadow-md w-full sm:w-52 flex flex-col items-center justify-center gap-3 sm:gap-4 transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
               <img
                 src={images.Payment}
                 alt="Success"
