@@ -5,7 +5,7 @@ const Home = () => {
     <div className="bg-[#f0f6ff] overflow-hidden md:p-5 flex flex-col md:flex-row items-center justify-between w-full gap-4">
       <div className="w-full sm:w-[70%] md:w-[40%] p-4 sm:p-6 font-sans transition-all duration-500 ease-in-out">
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold leading-snug tracking-tight">
-          <span className="text-[#008c59] block w-full">
+          <span className="text-[#1a3cb8] block w-full font-bold">
             Streamline Your Life:
           </span>
 
@@ -24,9 +24,11 @@ const Home = () => {
           efficiency.
         </p>
 
-        <button className="mt-6 sm:mt-8 md:mt-10 px-5 py-2 sm:px-6 sm:py-3 bg-[#008c59] hover:bg-purple-700 text-white rounded-full font-semibold shadow-lg transition-transform duration-300 transform hover:scale-105 hover:-translate-y-1">
-          Get started →
-        </button>
+        <a href="#ABOUTUS">
+          <button className="mt-6 sm:mt-8 md:mt-10 px-5 py-2 sm:px-6 sm:py-3 bg-[#008c59] hover:bg-purple-700 text-white rounded-full font-semibold shadow-lg transition-transform duration-300 transform hover:scale-105 hover:-translate-y-1">
+            Get started →
+          </button>
+        </a>
       </div>
 
       <div className="bg-[#f0f6ff] p-1 flex items-center justify-center w-full  md:w-[60%]">
