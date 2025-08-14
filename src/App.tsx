@@ -77,20 +77,6 @@ const App = () => {
       >
         <Footer />
       </section>
-
-      {/* <User_Terms
-        activePrivacy={activePrivacy}
-        activeTerms={activeTerms}
-        privacyActive={privacyActive}
-        termsActive={termsActive}
-        privacyInActive={privacyInActive}
-        termsInActive={termsInActive}
-      /> */}
-      {/* <div
-        className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
-      >
-        <Footer />
-      </div> */}
     </>
   );
 };

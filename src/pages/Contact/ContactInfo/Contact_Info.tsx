@@ -12,7 +12,7 @@ const Contact_Info = () => {
     },
     {
       icons: <IoMdMail />,
-      text: "info@auronixs.com",
+      text: "@example.com",
       id: "2",
     },
     {

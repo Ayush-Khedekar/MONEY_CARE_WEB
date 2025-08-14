@@ -75,10 +75,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end gap-4 sm:gap-5 mt-8">
+          <div className="flex justify-between items-center gap-4 sm:gap-5 mt-8">
             <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full sm:w-96 text-xs sm:text-sm transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
-              <p className="text-gray-700 mb-2 font-bold">Authorize payment</p>
-              <div className="text-gray-500 space-y-1 ">
+              <p className="text-gray-700 mb-2 text-[1rem] font-bold">
+                Authorize payment
+              </p>
+              <div className="text-gray-500 space-y-1 text-[0.9rem]">
                 <p>
                   <strong>Amount:</strong> ₹ 75.00
                 </p>
@@ -101,9 +103,9 @@ const Home = () => {
               <img
                 src={images.Payment}
                 alt="Success"
-                className="w-14 h-14 sm:w-16 sm:h-16 mb-1 sm:mb-2 object-contain"
+                className="w-20 sm:w-20 mb-1 sm:mb-2 object-contain"
               />
-              <p className="text-xs sm:text-sm font-semibold text-center">
+              <p className="text-[1rem] sm:text-sm font-semibold text-center">
                 Successful transaction
               </p>
             </div>
