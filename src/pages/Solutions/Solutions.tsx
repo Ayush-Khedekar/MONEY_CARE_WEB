@@ -57,7 +57,7 @@ const Solutions = () => {
     <div className="w-full bg-blue-50 py-5 px-4 sm:px-5 lg:px-5 overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-800 leading-snug">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#133042] leading-snug">
             Revolutionizing Utility Bill Payments and Travel Services
           </h2>
           <p className="text-gray-600 text-base sm:text-lg">
@@ -77,9 +77,9 @@ const Solutions = () => {
               <motion.li
                 variants={itemVariants}
                 key={item.id}
-                className="flex items-center gap-3"
+                className="flex text-[#15683A] font-medium items-center gap-3"
               >
-                <span className="bg-black rounded-full p-2 text-white text-xl">
+                <span className="bg-[#133042] rounded-full p-2 text-white text-xl">
                   {item.icons}
                 </span>
                 {item.text}
@@ -105,12 +105,12 @@ const Solutions = () => {
             <motion.div
               variants={itemVariants}
               key={item.id}
-              className="bg-white hover:bg-black hover:text-white p-6 rounded-2xl shadow-lg flex flex-col items-center gap-4 hover:scale-105 transition-transform duration-300"
+              className="bg-white hover:bg-[#133042] hover:text-white font-semibold p-6 rounded-2xl shadow-lg flex flex-col items-center gap-4 hover:scale-105 transition-transform duration-300"
             >
               <span className="w-20 h-12 flex items-center justify-center">
                 {item.icons}
               </span>
-              <span className="text-sm">{item.text}</span>
+              <span className="text-sm ">{item.text}</span>
             </motion.div>
           ))}
         </motion.div>

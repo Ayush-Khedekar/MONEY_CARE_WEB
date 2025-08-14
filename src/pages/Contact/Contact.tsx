@@ -15,7 +15,7 @@ const Contact = () => {
     >
       <div className="flex flex-col items-center mt-3 text-center gap-5">
         <img src={logo} alt="logo" className="sm:w-[30%] w-[35%]" />
-        <p className="sm:text-[1.3rem] font-semibold text-blue-800">
+        <p className="sm:text-[1.3rem] font-semibold text-[#133042]">
           We're here to assist you. Reach out to us for any inquiries or
           support.
         </p>

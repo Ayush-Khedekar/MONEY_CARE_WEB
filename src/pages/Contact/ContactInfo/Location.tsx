@@ -2,13 +2,13 @@ const Location = () => {
   return (
     <div className="flex flex-col md:flex-col bg-white rounded-xl shadow-md overflow-hidden">
       <div className="w-full md:w-[100%] p-6 sm:p-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-4">
-          Find Us at <span className="text-green-600">Money_Care</span>
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#133042] mb-4">
+          Find Us at <span className="text-[#15683A]">Money_Care</span>
         </h2>
         <p className="text-gray-600 text-base sm:text-lg">
           Visit our office at Centrum Business Square, Thane (W). We're here to
           help you make smart financial decisions, backed by the trust and care
-          of <strong>Money_Care</strong>.
+          of <strong className="text-[#15683A]">Money_Care</strong>.
         </p>
       </div>
 

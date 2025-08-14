@@ -79,7 +79,7 @@ const ContactForm = () => {
         initial={{ opacity: 0, x: -50 }}
         transition={{ duration: 1.4 }}
         viewport={{ once: true }}
-        className="text-[1.8rem] sm:text-[2.5rem] font-extrabold text-[#1E40AF] text-center sm:text-left"
+        className="text-[1.8rem] sm:text-[2.5rem] font-extrabold text-[#133042] text-center sm:text-left"
       >
         Contact Us
       </motion.h1>

@@ -25,24 +25,23 @@ const Contact_Info = () => {
   return (
     <div className="h-full flex flex-col justify-between gap-8 p-6 md:p-8 bg-white rounded-2xl ">
       <div className="space-y-8">
-
-      <h2 className="text-[1rem] md:text-3xl font-bold text-blue-800">
-        Contact Information
-      </h2>
-      {contactInfoData.map((item) => (
-        <div
-          className="flex items-start gap-4 text-gray-700 text-base md:text-lg"
-          key={item.id}
-        >
-          <span className="text-blue-600 text-2xl md:text-3xl">
-            {item.icons}
-          </span>
-          <p className="font-medium leading-relaxed">{item.text}</p>
-        </div>
-      ))}
+        <h2 className="text-[1rem] md:text-3xl font-bold text-[#133042]">
+          Contact Information
+        </h2>
+        {contactInfoData.map((item) => (
+          <div
+            className="flex items-start gap-4 text-gray-700 text-base md:text-lg"
+            key={item.id}
+          >
+            <span className="text-[#133042] text-2xl md:text-3xl">
+              {item.icons}
+            </span>
+            <p className="font-medium leading-relaxed">{item.text}</p>
+          </div>
+        ))}
       </div>
 
-      <div className="w-full flex gap-5 mt-auto text-xl">
+      <div className="w-full flex gap-5 mt-auto text-xl cursor-pointer">
         <FaLinkedin /> <FaTwitter /> <FaInstagram /> <FaFacebook />
       </div>
     </div>
