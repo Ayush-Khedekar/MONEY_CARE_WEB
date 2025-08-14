@@ -54,7 +54,7 @@ const Solutions = () => {
     show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
   return (
-    <div className="w-full bg-blue-50 py-5 px-4 sm:px-5 lg:px-5 overflow-x-hidden">
+    <div className="w-full bg-blue-50 py-10 px-4 sm:px-5 lg:px-5 overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#133042] leading-snug">

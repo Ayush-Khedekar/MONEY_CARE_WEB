@@ -40,7 +40,7 @@ const App = () => {
         id="ABOUTUS"
         className={`${
           activePrivacy || activeTerms === true ? "blur-xs" : ""
-        } w-full space-y-10 bg-blue-50 pb-4 sm:pt-0 pt-10`}
+        } w-full space-y-10 bg-blue-50 pb-4 pt-10`}
       >
         <OurCard />
       </section>
