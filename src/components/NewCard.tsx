@@ -1,5 +1,3 @@
-// import React from "react";
-
 interface CardProp {
   Icons: string;
   Title: string;
