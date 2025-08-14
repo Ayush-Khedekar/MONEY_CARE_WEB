@@ -14,11 +14,12 @@ const Navbar = () => {
   }
 
   const handleScrollTo = (id: string) => {
-    const offset = 80; // navbar height
+    // const offset = 80; // navbar height
+    const navbarHeight = document.querySelector("nav")?.offsetHeight || 80;
     const el = document.getElementById(id);
     if (el) {
       const elementPosition = el.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - offset;
+      const offsetPosition = elementPosition - navbarHeight;
 
       window.scrollTo({
         top: offsetPosition,
