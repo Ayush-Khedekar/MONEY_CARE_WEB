@@ -5,12 +5,13 @@ import FavLogo from "../image-export/MONEY CARE FAVICON SVG (1).svg";
 
 type dataType = {
   icons: React.ReactNode;
+  id: string;
 };
 
 const Footer = () => {
   const [data, _setData] = useState<dataType[]>([
-    { icons: <FaHouseUser /> },
-    { icons: <FaLinkedin /> },
+    { icons: <FaHouseUser />, id: "1" },
+    { icons: <FaLinkedin />, id: "2" },
   ]);
 
   return (
@@ -18,24 +19,26 @@ const Footer = () => {
       <img
         src={FavLogo}
         alt="bgLogo"
-        className="w-full h-30 opacity-55 object-contain mb-6 pointer-events-none select-none"
+        className="w-full h-30 opacity-55 object-contain mb-2 pointer-events-none select-none"
       />
 
       <div className="w-full flex flex-col sm:flex-row sm:justify-between items-center gap-6 sm:gap-0">
-        <p className="font-semibold text-center text-gray-700 text-sm sm:text-base max-w-xl">
+        <p className="font-semibold text-center text-[#133042] text-sm sm:text-base max-w-xl">
           © {new Date().getFullYear()} Auronix Payment Solutions Pvt. LTD. All
           rights reserved.
         </p>
 
         <div className="flex gap-6 text-2xl">
-          {data.map((item, index) => (
-            <button
-              key={index}
-              className="bg-white hover:bg-blue-600 transition-colors duration-300 p-3 rounded-full text-blue-800 hover:text-white shadow-md hover:shadow-lg"
-              aria-label={`Social icon ${index + 1}`}
-            >
-              {item.icons}
-            </button>
+          {data.map((item) => (
+            <a href={`${item.id === "1" ? "#HOME" : ""}`}>
+              <button
+                key={item.id}
+                className="bg-white hover:bg-[#133042] transition-colors duration-300 p-3 rounded-full text-[#133042] hover:text-white shadow-md hover:shadow-lg"
+                aria-label={`Social icon ${item.id + 1}`}
+              >
+                {item.icons}
+              </button>
+            </a>
           ))}
         </div>
       </div>
