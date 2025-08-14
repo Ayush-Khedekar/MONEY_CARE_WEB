@@ -30,9 +30,8 @@ const Footer = () => {
 
         <div className="flex gap-6 text-2xl">
           {data.map((item) => (
-            <a href={`${item.id === "1" ? "#HOME" : ""}`}>
+            <a key={item.id} href={`${item.id === "1" ? "#HOME" : ""}`}>
               <button
-                key={item.id}
                 className="bg-white hover:bg-[#133042] transition-colors duration-300 p-3 rounded-full text-[#133042] hover:text-white shadow-md hover:shadow-lg"
                 aria-label={`Social icon ${item.id + 1}`}
               >

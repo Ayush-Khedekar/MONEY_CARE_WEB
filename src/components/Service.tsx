@@ -67,7 +67,7 @@ const services: servicetype[] = [
 
 const Service = () => {
   return (
-    <div className="py-16 px-6 md:px-20 bg-[#f0f6ff] text-center">
+    <div className="py-10 px-6 md:px-20 bg-[#f0f6ff] text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[#133042]">
         Empower Your Finances:
       </h2>
