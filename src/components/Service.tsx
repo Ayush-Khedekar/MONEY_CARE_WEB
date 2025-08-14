@@ -60,10 +60,10 @@ const services: servicetype[] = [
 const Service = () => {
   return (
     <div className="py-16 px-6 md:px-20 bg-[#f0f6ff] text-center">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-black">
+      <h2 className="text-3xl md:text-4xl font-bold mb-3 text-black">
         Empower Your Finances:
       </h2>
-      <p className="text-xl text-gray-700 mb-12">RioMoney at Your Service.</p>
+      <p className="text-lg text-gray-700 mb-12">Money Care at Your Service.</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => {

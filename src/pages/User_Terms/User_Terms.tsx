@@ -20,8 +20,8 @@ const User_Terms = ({
   privacyInActive,
 }: activeStateProp) => {
   return (
-    <div className="flex flex-col w-full bg-blue-50 relative overflow-x-hidden justify-center items-center pt-9 px-4 sm:px-10 ">
-      <div className="flex flex-wrap gap-4 sm:gap-6 justify-center mb-6">
+    <div className="flex flex-col w-full bg-blue-50 relative overflow-x-hidden px-4 sm:px-10">
+      <div className="flex flex-wrap gap-4 sm:gap-6 justify-center p-6">
         <button
           onClick={() => privacyActive()}
           type="button"
@@ -57,7 +57,7 @@ const User_Terms = ({
             >
               <IoCloseSharp size={25} />
             </button>
-              <Privacy_Policy />
+            <Privacy_Policy />
           </motion.div>
         )}
 

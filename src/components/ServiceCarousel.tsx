@@ -24,7 +24,7 @@ const cards = [
 ];
 
 const ServiceCarousel = () => {
-  return (
+  return ( 
     <div className="space-y-8">
       {cards.map((card, index) => (
         <motion.div

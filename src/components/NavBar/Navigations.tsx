@@ -6,7 +6,7 @@ type Props = {
 };
 
 const navItems = [
-  { id: "ABOUT US", label: "ABOUT US" },
+  { id: "ABOUTUS", label: "ABOUT US" },
   { id: "FEATURES", label: "FEATURES" },
   { id: "SOLUTIONS", label: "SOLUTIONS" },
   { id: "USER TERMS", label: "USER TERMS" },
@@ -33,7 +33,7 @@ const Navigations = ({ onLinkClick, activeSection }: Props) => {
         >
           <a
             href={`#${item.id}`}
-            className={`flex flex-col items-start justify-between mx-2 md:text-[13px] pt-[5px] pb-[3px] text-[20px] xl:text-[18px] lg:text-[16px] 2xl:text-[20px] font-medium hover:text-[#00556a] font-[Poppins] relative
+            className={`flex flex-col items-start justify-between mx-2 md:text-[13px] pt-[5px] pb-[3px] text-[20px] xl:text-[18px] lg:text-[16px] 2xl:text-[20px] font-medium hover:text-[#00556a] relative
               ${activeSection === item.id ? "" : "text-[#000000]"}
               `}
           >
