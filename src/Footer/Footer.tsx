@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaHouseUser, FaLinkedin } from "react-icons/fa";
 
-import FavLogo from "../image-export/LOGO VARIATION 02.svg";
+import FavLogo from "../image-export/MONEY CARE FAVICON SVG (1).svg";
 
 type dataType = {
   icons: React.ReactNode;
@@ -18,7 +18,7 @@ const Footer = () => {
       <img
         src={FavLogo}
         alt="bgLogo"
-        className="w-full h-40 opacity-55 object-contain mb-6 pointer-events-none select-none"
+        className="w-full h-30 opacity-55 object-contain mb-6 pointer-events-none select-none"
       />
 
       <div className="w-full flex flex-col sm:flex-row sm:justify-between items-center gap-6 sm:gap-0">

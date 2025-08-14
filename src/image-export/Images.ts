@@ -1,4 +1,4 @@
-import LOGO from "./LOGO.svg";
+import LOGO from "./MONEY CARE LOGO SVG (1).svg";
 import Credit from "./Credit card-rafiki.svg";
 import Money from "./Money motivation-bro.svg";
 import MoneyStress from "./Money stress-amico.svg";
