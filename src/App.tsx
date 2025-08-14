@@ -36,57 +36,47 @@ const App = () => {
       <section id="HOME">
         <Home />
       </section>
-      <main>
-        <section
-          id="ABOUTUS"
-          className={`${
-            activePrivacy || activeTerms === true ? "blur-xs" : ""
-          } w-full space-y-10 bg-blue-50 pb-4 pt-4`}
-        >
-          <OurCard />
-        </section>
-        <div
-          id="FEATURES"
-          className={`${
-            activePrivacy || activeTerms === true ? "blur-xs" : ""
-          }`}
-        >
-          <Service />
-        </div>
-        <div
-          id="SOLUTIONS"
-          className={`${
-            activePrivacy || activeTerms === true ? "blur-xs" : ""
-          }`}
-        >
-          <Solutions />
-        </div>
-        <section id="USER TERMS">
-          <User_Terms
-            activePrivacy={activePrivacy}
-            activeTerms={activeTerms}
-            privacyActive={privacyActive}
-            termsActive={termsActive}
-            privacyInActive={privacyInActive}
-            termsInActive={termsInActive}
-          />
-        </section>
-        <section
-          id="CONTACT"
-          className={`${
-            activePrivacy || activeTerms === true ? "blur-xs" : ""
-          }`}
-        >
-          <Contact />
-        </section>
-        <section
-          className={`${
-            activePrivacy || activeTerms === true ? "blur-xs" : ""
-          }`}
-        >
-          <Footer />
-        </section>
-      </main>
+      <section
+        id="ABOUTUS"
+        className={`${
+          activePrivacy || activeTerms === true ? "blur-xs" : ""
+        } w-full space-y-10 bg-blue-50 pb-4 sm:pt-0 pt-10`}
+      >
+        <OurCard />
+      </section>
+      <div
+        id="FEATURES"
+        className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
+      >
+        <Service />
+      </div>
+      <div
+        id="SOLUTIONS"
+        className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
+      >
+        <Solutions />
+      </div>
+      <section id="USER_TERMS">
+        <User_Terms
+          activePrivacy={activePrivacy}
+          activeTerms={activeTerms}
+          privacyActive={privacyActive}
+          termsActive={termsActive}
+          privacyInActive={privacyInActive}
+          termsInActive={termsInActive}
+        />
+      </section>
+      <section
+        id="CONTACT"
+        className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
+      >
+        <Contact />
+      </section>
+      <section
+        className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
+      >
+        <Footer />
+      </section>
 
       {/* <User_Terms
         activePrivacy={activePrivacy}

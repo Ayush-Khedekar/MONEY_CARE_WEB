@@ -9,7 +9,7 @@ const navItems = [
   { id: "ABOUTUS", label: "ABOUT US" },
   { id: "FEATURES", label: "FEATURES" },
   { id: "SOLUTIONS", label: "SOLUTIONS" },
-  { id: "USER TERMS", label: "USER TERMS" },
+  { id: "USER_TERMS", label: "USER TERMS" },
   { id: "CONTACT", label: "CONTACT" },
 ];
 
