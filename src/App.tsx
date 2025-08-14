@@ -36,10 +36,10 @@ const App = () => {
       <Home />
       <main>
         <div
-          id="ABOUT US"
+          id="ABOUTUS"
           className={`${
             activePrivacy || activeTerms === true ? "blur-xs" : ""
-          }`}
+          } w-full space-y-10`}
         >
           <OurCard />
         </div>
@@ -69,21 +69,21 @@ const App = () => {
             termsInActive={termsInActive}
           />
         </section>
-        <div
+        <section
           id="CONTACT"
           className={`${
             activePrivacy || activeTerms === true ? "blur-xs" : ""
           }`}
         >
           <Contact />
-        </div>
-        <div
+        </section>
+        <section
           className={`${
             activePrivacy || activeTerms === true ? "blur-xs" : ""
           }`}
         >
           <Footer />
-        </div>
+        </section>
       </main>
 
       {/* <User_Terms
@@ -94,11 +94,11 @@ const App = () => {
         privacyInActive={privacyInActive}
         termsInActive={termsInActive}
       /> */}
-      <div
+      {/* <div
         className={`${activePrivacy || activeTerms === true ? "blur-xs" : ""}`}
       >
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 };

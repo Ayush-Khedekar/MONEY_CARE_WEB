@@ -87,7 +87,7 @@ const Solutions = () => {
             ))}
           </motion.ul>
 
-          <a href={`#contact`}>
+          <a href="#CONTACT">
             <button className="mt-6 px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
               TRY IT NOW
             </button>

@@ -14,11 +14,16 @@ const Navbar = () => {
   }
 
   const handleScrollTo = (id: string) => {
-    const offset = 80;
+    const offset = 80; // navbar height
     const el = document.getElementById(id);
     if (el) {
-      const top = el.offsetTop - offset;
-      window.scrollTo({ top, behavior: "smooth" });
+      const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
     setShowDropDown(false);
   };
@@ -43,26 +48,21 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-20 bg-white shadow-sm transition-shadow duration-300">
       <div className="flex relative justify-between items-center px-6 py-2 bg-white">
-        {/* Logo */}
         <img
           src={images.LOGO}
           className="lg:w-[10%] sm:w-[33%] w-[30%] md:w-[20%] cursor-pointer hover:scale-105 transition-transform duration-300"
         />
 
-        {/* Right Section */}
-        <div className="flex gap-4 items-center">
-          {/* Desktop Nav */}
+        <div className="flex gap-6 items-center">
           <div className="hidden lg:block">
             <ul className="flex items-center gap-4">
               <Navigations
                 onLinkClick={handleScrollTo}
                 activeSection={active}
-                // className="relative group hover:text-[#008c59] transition-colors duration-300"
               />
             </ul>
           </div>
 
-          {/* Mobile Hamburger */}
           <div className="lg:hidden flex relative items-center">
             <button
               onClick={toggleDropDown}
@@ -88,7 +88,6 @@ const Navbar = () => {
             </div>
           )}
 
-          {/* SIGN IN Button */}
           <button className="relative p-[2px] rounded-xl bg-gradient-to-r from-cyan-400 via-orange-300 to-purple-500 bg-[length:200%_200%] animate-borderPulse">
             <div className="bg-white rounded-lg px-4 py-2 text-black text-sm font-medium hover:bg-gray-100 transition-colors">
               SIGN IN

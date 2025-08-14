@@ -10,9 +10,9 @@ const Contact = () => {
   const [activeTab, setActiveTab] = useState(false);
 
   return (
-    <div className="w-full space-y-10 flex flex-col items-center sm:p-8 bg-blue-50">
+    <div className={`w-full space-y-10 flex flex-col items-center sm:p-6 bg-blue-50 sm:pt-6`}>
       <div className="flex flex-col items-center mt-3 text-center gap-5">
-        <img src={logo} alt="logo" className="sm:w-[10%] w-[30%]" />
+        <img src={logo} alt="logo" className="sm:w-[10%] w-[35%]" />
         <p className="sm:text-[1.3rem] font-semibold text-blue-800">
           We're here to assist you. Reach out to us for any inquiries or
           support.
