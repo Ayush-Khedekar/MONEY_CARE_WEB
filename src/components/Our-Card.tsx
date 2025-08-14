@@ -1,15 +1,13 @@
-
 import ServiceCarousel from "./ServiceCarousel";
-
 
 const OurCard = () => {
   return (
     <>
-      <div className="text-center bg-blue-50">
+      <div className="text-center bg-blue-50 space-y-2">
         <p className="text-[1rem] tracking-widest text-[#133042] uppercase">
           [ READY TO GET STARTED ]
         </p>
-        <h2 className="text-3xl sm:text-4xl text-[#133042] leading-snug font-bold">
+        <h2 className="text-xl sm:text-4xl text-[#133042] leading-snug font-bold">
           Empowering change, one step at <br /> a time.
         </h2>
       </div>
@@ -33,10 +31,12 @@ const OurCard = () => {
                 settled in seconds.
               </p>
 
-              <a href="#CONTACT"><button className="bg-[#7a5af8] hover:bg-[#6747e9] text-white px-6 py-3 rounded-full font-semibold text-sm flex items-center gap-2 transition duration-300">
-                Get in touch
-                <span className="text-lg">→</span>
-              </button></a>
+              <a href="#CONTACT">
+                <button className="bg-[#7a5af8] hover:bg-[#6747e9] cursor-pointer text-white px-6 py-3 rounded-full font-semibold text-sm flex items-center gap-2 transition duration-300">
+                  Get in touch
+                  <span className="text-lg">→</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>

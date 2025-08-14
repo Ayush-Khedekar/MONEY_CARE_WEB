@@ -1,4 +1,11 @@
 import React from "react";
+import { IoMdSettings } from "react-icons/io";
+import { FaHandHoldingUsd } from "react-icons/fa";
+// import { FaHeadset, FaRegHandshake } from "react-icons/fa6";
+import { MdGppGood } from "react-icons/md";
+import { RiHandHeartLine } from "react-icons/ri";
+import { BiSupport } from "react-icons/bi";
+import { GiProgression } from "react-icons/gi";
 
 type servicetype = {
   title: string;
@@ -13,14 +20,15 @@ const services: servicetype[] = [
     content:
       "Utilize state-of-the-art technology to offer innovative solutions that streamline bill pay processes and enhance user experience.",
     id: "1",
-    icon: "",
+    icon: <IoMdSettings />,
   },
   {
     title: "Robust Security Measures",
     content:
       "Implement stringent security protocols to safeguard sensitive data and ensure the confidentiality and integrity of transactions.",
     color: "border-orange-400",
-    icon: "",
+    icon: <FaHandHoldingUsd />,
+
     id: "2",
   },
   {
@@ -28,7 +36,7 @@ const services: servicetype[] = [
     content:
       "Design services that can adapt to the evolving needs of clients and accommodate growth without compromising performance or efficiency.",
     color: "border-purple-400",
-    icon: "",
+    icon: <GiProgression  />,
     id: "3",
   },
   {
@@ -36,7 +44,7 @@ const services: servicetype[] = [
     content:
       "Adhere to regulatory standards and compliance requirements to maintain trust and credibility while ensuring the protection of clients’ assets.",
     color: "border-red-400",
-    icon: "",
+    icon: <MdGppGood />,
     id: "4",
   },
   {
@@ -44,7 +52,7 @@ const services: servicetype[] = [
     content:
       "Offer customizable solutions tailored to individual client needs, providing them with personalized experiences and maximizing the value delivered.",
     color: "border-blue-400",
-    icon: "",
+    icon: <RiHandHeartLine/>,
     id: "5",
   },
   {
@@ -52,18 +60,18 @@ const services: servicetype[] = [
     content:
       "Provide timely and responsive customer support to address inquiries, resolve issues, and foster strong client relationships.",
     color: "border-yellow-400",
-    icon: "",
+    icon: <BiSupport />,
     id: "6",
   },
 ];
 
 const Service = () => {
   return (
-    <div className="py-7 px-6 md:px-20 bg-[#f0f6ff] text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-3 text-black">
+    <div className="py-16 px-6 md:px-20 bg-[#f0f6ff] text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[#133042]">
         Empower Your Finances:
       </h2>
-      <p className="text-lg text-gray-700 mb-12">Money Care at Your Service.</p>
+      <p className="text-[1rem] text-gray-700 mb-12">Money Care at Your Service.</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => {
