@@ -1,6 +1,11 @@
+import { useEffect, useState } from "react";
 import { images } from "../../image-export/Images";
+import successor from "../../Images/confirmed-animation-gif-download-5359648.mp4";
 
 const Home = () => {
+  const [showGif, setShowGif] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+
   return (
     <div className="bg-[#f0f6ff] overflow-hidden md:p-5 flex flex-col md:flex-row md:items-center justify-between w-full gap-4">
       <div className="w-full sm:w-full md:w-[50%] space-y-5 p-4 sm:p-6 font-sans transition-all duration-500 ease-in-out">
@@ -41,7 +46,9 @@ const Home = () => {
                 className="w-25 sm:w-30 rounded-xl object-contain"
               />
               <div className="text-center">
-                <p className="text-sm font-semibold ">Utility Payments</p>
+                <button className="bg-gray-100 text-black px-2 sm:px-4 py-2 rounded-2xl text-xs sm:text-sm font-medium transition-colors">
+                  Utility Payments
+                </button>
               </div>
             </div>
 
@@ -52,57 +59,70 @@ const Home = () => {
                 className="w-30 sm:w-30 object-contain mx-auto mb-2"
               />
               <div className="flex flex-col gap-2">
-                <button className="bg-gray-900 text-white px-2 sm:px-4 py-2 rounded-2xl text-xs sm:text-sm font-medium hover:bg-gray-800 transition-colors cursor-pointer">
-                  Recharge
+                <button className="bg-gray-100 text-black px-2 sm:px-4 py-2 rounded-2xl text-xs sm:text-sm font-medium transition-colors">
+                  Mobile Recharge
                 </button>
               </div>
             </div>
 
             <div className="bg-white p-4 rounded-2xl shadow-md w-full sm:w-auto text-center font-semibold transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
-              <p className="text-xs sm:text-sm font-semibold mb-3">
-                Tours and Travels
-              </p>
               <img
                 src={images.MoneyStress}
                 alt="Bank Logos"
                 className="w-25 sm:w-30 object-contain"
               />
+              <button className="bg-gray-100 text-black px-2 sm:px-4 py-2 rounded-2xl text-xs sm:text-sm font-medium transition-colors">
+                Tour & Travels
+              </button>
             </div>
           </div>
 
-          <div className="flex justify-between items-center gap-4 sm:gap-5 mt-8">
-            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full sm:w-[50%] md:w-96 text-xs sm:text-sm transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
-              <p className="text-gray-700 mb-2 text-[1rem] font-bold">
-                Authorize payment
-              </p>
-              <div className="text-gray-500 space-y-1 text-[0.9rem]">
-                <p>
-                  <strong>Amount:</strong> ₹ 75.00
-                </p>
-                <p>
-                  <strong>Recipient:</strong> PlaystationStore
-                </p>
-                <p>
-                  <strong>Sort code:</strong> 98-76-54
-                </p>
-                <p>
-                  <strong>Account number:</strong> 12956381
-                </p>
-              </div>
-              <button className="mt-3 sm:mt-4 bg-gray-900 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium hover:bg-gray-800 transition-colors">
-                CONFIRM
-              </button>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-5 mt-8">
+            <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-[100%] sm:w-[50%] md:w-62 text-xs sm:text-sm transition-shadow duration-300 hover:shadow-xl shadow-gray-400 flex flex-col justify-start">
+              {showGif ? (
+                <video
+                  src={successor}
+                  autoPlay
+                  onEnded={() => setShowGif(false)}
+                  className="rounded-xl h-[10rem] md:h-[12rem] lg:h-[10rem]"
+                />
+              ) : (
+                <>
+                  <p className="text-gray-700 mb-2 text-[1rem] font-bold">
+                    Authorize payment
+                  </p>
+                  <div className="text-gray-500 space-y-1 text-[0.9rem]">
+                    <p>
+                      <strong>Amount:</strong> ₹ 75.00
+                    </p>
+                    <p>
+                      <strong>Recipient:</strong> PlaystationStore
+                    </p>
+                    <p>
+                      <strong>Sort code:</strong> 98-76-54
+                    </p>
+                    <p>
+                      <strong>Account number:</strong> 12956381
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => setShowGif(true)}
+                    className="mt-2 sm:mt-4 bg-gray-900 text-white px-4 py-2 rounded-full cursor-pointer text-xs sm:text-sm font-medium hover:bg-gray-800 transition-colors"
+                  >
+                    CONFIRM
+                  </button>
+                </>
+              )}
             </div>
-
-            <div className="bg-white p-6 sm:p-6 rounded-2xl shadow-md w-full sm:w-52 flex flex-col items-center justify-center gap-3 sm:gap-4 transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
+            <div className="bg-white p-6 sm:p-6 rounded-2xl shadow-md w-[100%] sm:w-[50%] flex flex-col items-center justify-center gap-3 sm:gap-4 transition-shadow duration-300 hover:shadow-xl shadow-gray-400">
               <img
                 src={images.Payment}
                 alt="Success"
-                className="w-20 sm:w-20 mb-1 sm:mb-2 object-contain"
+                className="w-30 sm:w-20 mb-1 sm:mb-2 object-contain"
               />
-              <p className="text-[1rem] sm:text-sm font-semibold text-center">
-                Successful transaction
-              </p>
+              <button className="bg-gray-100 text-black px-2 sm:px-4 py-2 rounded-2xl text-md sm:text-sm font-medium transition-colors">
+                Successful transactions
+              </button>
             </div>
           </div>
         </div>
