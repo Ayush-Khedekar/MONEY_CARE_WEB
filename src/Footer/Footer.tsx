@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaHouseUser, FaLinkedin } from "react-icons/fa";
 
-import FavLogo from "../image-export/MONEY CARE FAVICON SVG (1).svg";
+import FavLogo from "../image-export/favicon.svg";
 
 type dataType = {
   icons: React.ReactNode;
@@ -24,7 +24,7 @@ const Footer = () => {
 
       <div className="w-full flex flex-col sm:flex-row sm:justify-between items-center gap-6 sm:gap-0">
         <p className="font-semibold text-center text-[#133042] text-sm sm:text-base max-w-xl">
-          © {new Date().getFullYear()} Auronix Payment Solutions Pvt. LTD. All
+          © {new Date().getFullYear()} MONEYCARE WALLET SERVICE Pvt. LTD. All
           rights reserved.
         </p>
 

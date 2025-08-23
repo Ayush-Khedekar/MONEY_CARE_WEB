@@ -33,7 +33,12 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <section id="HOME">
+      <section
+        id="HOME"
+        className={`${
+          activePrivacy || activeTerms === true ? "blur-xs" : ""
+        } bg-blue-50 py-4`}
+      >
         <Home />
       </section>
       <section

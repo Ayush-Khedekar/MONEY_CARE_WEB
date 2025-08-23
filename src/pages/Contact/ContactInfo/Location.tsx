@@ -6,20 +6,21 @@ const Location = () => {
           Find Us at <span className="text-[#15683A]">Money_Care</span>
         </h2>
         <p className="text-gray-600 text-base sm:text-lg">
-          Visit our office at Centrum Business Square, Thane (W). We're here to
-          help you make smart financial decisions, backed by the trust and care
-          of <strong className="text-[#15683A]">Money_Care</strong>.
+          Visit our office at panalal compound, Bhandup (W). We're here to help
+          you make smart financial decisions, backed by the trust and care of{" "}
+          <strong className="text-[#15683A]">Money_Care</strong>.
         </p>
       </div>
 
       <div className="w-full md:w-[100%] h-[250px] sm:h-[350px]">
         <iframe
           title="Money_Care Location"
-          src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Centrum%20Business%20Square,Road%20No.%2016,Wagle%20Estate,Thane%20west,maharashtra,India+(Money_Care)&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.9343976494047!2d72.93577490000001!3d19.154348700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b86673253dd9%3A0x950775382663a34a!2sPannalal%20Complex!5e0!3m2!1sen!2sin!4v1755772821322!5m2!1sen!2sin"
           className="w-full h-full border-0"
           loading="lazy"
           allowFullScreen
         ></iframe>
+        {/* src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.9343976494047!2d72.93577490000001!3d19.154348700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b86673253dd9%3A0x950775382663a34a!2sPannalal%20Complex!5e0!3m2!1sen!2sin!4v1755772821322!5m2!1sen!2sin"  */}
       </div>
     </div>
   );

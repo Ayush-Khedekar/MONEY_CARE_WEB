@@ -7,17 +7,17 @@ const Contact_Info = () => {
   const [contactInfoData, _setContactInfoData] = useState([
     {
       icons: <IoMdCall />,
-      text: "+91 00000 00000 / 00000 00000",
+      text: "+91 9082090971",
       id: "1",
     },
     {
       icons: <IoMdMail />,
-      text: "@example.com",
+      text: "moneycarewalletservice@gmail.com ",
       id: "2",
     },
     {
       icons: <FaLocationDot />,
-      text: "B-219,B-Wing,Plot No.-D-1,MIDC, Centrum Business Square, Road No. 16,Near Lotus IT Park, Wagle Estate , Thane (W),Maharashtra-400604, India",
+      text: "Floor no 05 office no 5116 Bhandup industrial estate panalal compound Bhandup west 400078",
       id: "3",
     },
   ]);

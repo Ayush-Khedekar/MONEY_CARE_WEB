@@ -3,7 +3,7 @@ import type { dataType } from "./Privacy_policy";
 export const data: dataType[] = [
   {
     label:
-      "(a) Auronix recognizes the expectations of its customers with regard to privacy, confidentiality, and security of their personal information that resides with Auronix.",
+      "(a) Money Care recognizes the expectations of its customers with regard to privacy, confidentiality, and security of their personal information that resides with Money Care.",
     id: "1",
   },
   {
@@ -13,7 +13,7 @@ export const data: dataType[] = [
   },
   {
     label:
-      "(c) By visiting Auronix website/WAP site/applications you expressly give us consent to use & disclose your personal information in accordance with this Privacy Policy. If you do not agree to the terms of the policy, please do not use or access Auronix website, WAP site, or mobile applications.",
+      "(c) By visiting Money Care website/WAP site/applications you expressly give us consent to use & disclose your personal information in accordance with this Privacy Policy. If you do not agree to the terms of the policy, please do not use or access Money Care website, WAP site, or mobile applications.",
     id: "3",
   },
   {
@@ -31,12 +31,12 @@ export const generalData: dataType[] = [
   },
   {
     label:
-      "(b) Any emails and/or SMS sent by Auronix will only be in connection with the provision of agreed services & products and this Privacy Policy.",
+      "(b) Any emails and/or SMS sent by Money Care will only be in connection with the provision of agreed services & products and this Privacy Policy.",
     id: "2",
   },
   {
     label:
-      "(c) Periodically, we may reveal general statistical information about Auronix & its users, such as number of visitors, number and type of goods and services purchased, etc.",
+      "(c) Periodically, we may reveal general statistical information about Money Care & its users, such as number of visitors, number and type of goods and services purchased, etc.",
     id: "3",
   },
   {
@@ -49,7 +49,7 @@ export const generalData: dataType[] = [
 export const personalData: dataType[] = [
   {
     label:
-      "(a) Personal Information means and includes all information that can be linked to a specific individual or to identify any individual, such as name, address, mailing address, telephone number, email ID, credit card number, cardholder name, card expiration date, information about your mobile phone, DTH service, data card, electricity connection, Smart Tags, and any details that may have been voluntarily provided by the user in connection with availing any of the services on Auronix. When you browse through Auronix, we may collect information regarding the domain and host from which you access the internet, the Internet Protocol [IP] address of the computer or Internet service provider [ISP] you are using, and anonymous site statistical data.",
+      "(a) Personal Information means and includes all information that can be linked to a specific individual or to identify any individual, such as name, address, mailing address, telephone number, email ID, credit card number, cardholder name, card expiration date, information about your mobile phone, DTH service, data card, electricity connection, Smart Tags, and any details that may have been voluntarily provided by the user in connection with availing any of the services on Money Care. When you browse through Money Care, we may collect information regarding the domain and host from which you access the internet, the Internet Protocol [IP] address of the computer or Internet service provider [ISP] you are using, and anonymous site statistical data.",
     id: "1",
   },
 ];
@@ -57,7 +57,7 @@ export const personalData: dataType[] = [
 export const cookiesData: dataType[] = [
   {
     label:
-      "(a) A 'cookie' is a small piece of information stored by a web server on a web browser so it can be later read back from that browser. Auronix uses cookie and tracking technology depending on the features offered.",
+      "(a) A 'cookie' is a small piece of information stored by a web server on a web browser so it can be later read back from that browser. Money Care uses cookie and tracking technology depending on the features offered.",
     id: "1",
   },
   {
@@ -70,7 +70,7 @@ export const cookiesData: dataType[] = [
 export const linkData: dataType[] = [
   {
     label:
-      "(a) Our site links to other websites that may collect personally identifiable information about you. Auronix is not responsible for the privacy practices or the content of those linked websites.",
+      "(a) Our site links to other websites that may collect personally identifiable information about you. Money Care is not responsible for the privacy practices or the content of those linked websites.",
     id: "1",
   },
 ];
@@ -78,7 +78,7 @@ export const linkData: dataType[] = [
 export const SecurityData: dataType[] = [
   {
     label:
-      "(a) Auronix has stringent security measures in place to protect the loss, misuse, and alteration of the information under our control.",
+      "(a) Money Care has stringent security measures in place to protect the loss, misuse, and alteration of the information under our control.",
     id: "1",
   },
   {
@@ -91,7 +91,7 @@ export const SecurityData: dataType[] = [
 export const ConsentData: dataType[] = [
   {
     label:
-      "(a) By using Auronix and/or by providing your information, you consent to the collection and use of the information you disclose on Auronix in accordance with this Privacy Policy, including but not limited to your consent for sharing your information as per this privacy policy.",
+      "(a) By using Money Care and/or by providing your information, you consent to the collection and use of the information you disclose on Money Care in accordance with this Privacy Policy, including but not limited to your consent for sharing your information as per this privacy policy.",
     id: "1",
   },
 ];
@@ -99,7 +99,7 @@ export const ConsentData: dataType[] = [
 export const communicationData: dataType[] = [
   {
     label:
-      "(a) For any kind of communication, please write to info@auronixpaymentsolutions.com",
+      "(a) For any kind of communication, please write to info@Money Carepaymentsolutions.com",
     id: "1",
   },
 ];

@@ -20,7 +20,7 @@ const User_Terms = ({
   privacyInActive,
 }: activeStateProp) => {
   return (
-    <div className="flex flex-col w-full bg-blue-50 relative overflow-x-hidden px-4 sm:px-10 py-5">
+    <div className="flex flex-col w-full bg-blue-50 relative overflow-x-hidden px-4 sm:px-10 py-6">
       <div className="flex flex-wrap gap-4 sm:gap-6 justify-center p-6">
         <button
           onClick={() => privacyActive()}

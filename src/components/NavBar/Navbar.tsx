@@ -51,7 +51,7 @@ const Navbar = () => {
         <img
           src={images.LOGO}
           onClick={() => handleScrollTo("HOME")}
-          className="lg:w-[15%] sm:w-[35%] w-[40%] md:w-[25%] cursor-pointer hover:scale-105 transition-transform duration-300"
+          className="lg:w-[15%] sm:w-[35%] w-[40%] md:w-[25%] cursor-pointer"
         />
         <div className="flex gap-6 items-center">
           <div className="hidden lg:block">
@@ -87,12 +87,13 @@ const Navbar = () => {
               />
             </div>
           )}
-
-          <button className="relative p-[2px] rounded-xl bg-gradient-to-r from-cyan-400 via-orange-300 to-purple-500 bg-[length:200%_200%] animate-borderPulse">
-            <div className="bg-white rounded-lg px-4 py-2 text-black text-sm font-medium hover:bg-gray-100 transition-colors">
-              SIGN IN
-            </div>
-          </button>
+          <a href="https://user.moneycarewallet.com/">
+            <button className="relative p-[2px] rounded-xl bg-gradient-to-r from-cyan-400 via-orange-300 to-purple-500 bg-[length:200%_200%] animate-borderPulse">
+              <div className="bg-white rounded-lg px-4 py-2 text-black text-sm font-medium hover:bg-gray-100 transition-colors">
+                SIGN IN
+              </div>
+            </button>
+          </a>
         </div>
       </div>
     </nav>
